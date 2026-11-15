@@ -1,47 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f4f4f9;
+  min-height: 100vh;
+  background: #f0fdf4;
 }
 
-.counter-container {
+.tasbih-card {
   background: #ffffff;
-  padding: 30px 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(22, 101, 52, 0.1);
   text-align: center;
+  width: 320px;
+}
+
+h1 {
+  color: #166534;
+  font-size: 1.4rem;
+}
+
+#dhikr-label {
+  color: #4b5563;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
 }
 
 #count-display {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333333;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #15803d;
+  margin: 1.2rem 0 0.5rem;
+}
+
+#status-text {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.75rem;
 }
 
 button {
-  font-size: 1.1rem;
-  padding: 10px 24px;
-  margin: 0 8px;
+  flex: 1;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   cursor: pointer;
-  color: #ffffff;
-  transition: opacity 0.2s;
-}
-
-button:hover {
-  opacity: 0.85;
 }
 
 #count-btn {
-  background-color: #28a745;
+  background: #16a34a;
+  color: #ffffff;
+}
+
+#count-btn:active {
+  transform: scale(0.96);
 }
 
 #reset-btn {
-  background-color: #dc3545;
+  background: #fee2e2;
+  color: #dc2626;
 }
